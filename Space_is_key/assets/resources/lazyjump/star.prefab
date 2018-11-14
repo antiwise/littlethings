@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "player",
+    "_name": "star",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -47,8 +47,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 46,
-      "height": 58
+      "width": 35,
+      "height": 35
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -56,8 +56,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -11,
-      "y": -13
+      "x": 438,
+      "y": 144
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -75,7 +75,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "1b1b9894-af27-4735-b90e-7f9f869a9d1b"
+      "__uuid__": "b81c9a00-80a3-4f3d-9f06-9fd55480627c"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -87,36 +87,19 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": false,
+    "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_atlas": null
   },
   {
-    "__type__": "cf1a39AvjJN/o8IuN1l7IhH",
+    "__type__": "d1184d2sNNN2LAlYAc91c7n",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
-    "_enabled": true,
-    "jumpHeight": 90,
-    "jumpDuration": 0.35,
-    "moveDuration": 4.5,
-    "allowJump": true,
-    "originY": 0,
-    "mediaWidth": 0,
-    "mediadHeight": 0,
-    "directionTo": 1,
-    "pointPrefab": {
-      "__uuid__": "33d846ce-d739-4c8b-9965-3deaf715a5d0"
-    },
-    "starAudio": {
-      "__uuid__": "55d110b9-bab6-4d9d-9416-03e46904fa35"
-    },
-    "jumpAudio": {
-      "__uuid__": "dc194f1a-c8a5-46ca-aaf9-f03b70974af5"
-    }
+    "_enabled": true
   },
   {
     "__type__": "cc.BoxCollider",
@@ -126,16 +109,16 @@
       "__id__": 1
     },
     "_enabled": true,
-    "tag": 1,
+    "tag": 0,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 1
+      "y": 0
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 46,
-      "height": 58
+      "width": 35,
+      "height": 35
     }
   },
   {
@@ -144,9 +127,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "b8130ce1-d8a6-47ca-85c6-1f873499ab94"
+      "__uuid__": "a6f8f6bd-cd59-464c-89f8-49832050a049"
     },
-    "fileId": "544e568qo5BoIKr1uO1Zyho",
+    "fileId": "89850hkvKNJOK6nSEwgbSLB",
     "sync": false
   }
 ]

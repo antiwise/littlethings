@@ -4,11 +4,12 @@ cc.Class({
     properties: {
         jumpHeight:0,
         jumpDuration: 0.35,
-        moveDuration:3.4,
+        moveDuration:4.5,
         allowJump:true,
         originY:0,
         mediaWidth:0,
         mediadHeight:0,
+        directionTo:1,
         pointPrefab:{
             default:null,
             type: cc.Prefab
@@ -16,14 +17,20 @@ cc.Class({
         starAudio: {
             default: null,
             url: cc.AudioClip
+        },
+        jumpAudio: {
+            default:null,
+            url: cc.AudioClip
         }
     },
     onLoad: function () {
-        this.jumpAction = this.setJumpAction();
+        //this.jumpAction = this.setJumpAction();
         this.setInputControl();
     },
     jump:function(){
+        this.jumpAction = this.setJumpAction();
         if(this.allowJump){
+            cc.audioEngine.playEffect(this.jumpAudio, false);
             this.node.runAction(this.jumpAction);
         }
     },
@@ -34,17 +41,26 @@ cc.Class({
     setJumpAction: function () {
         // 跳跃上升
         var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
+        var jumpRotateUp = cc.rotateBy(this.jumpDuration, -20,-20);//180, 180);
         // 下落
         var jumpDown = cc.moveBy(this.jumpDuration, cc.p(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
-        var jumpRotate = cc.rotateBy(this.jumpDuration*2, 360,360);//180, 180);
+        var jumpRotateDown = cc.rotateBy(this.jumpDuration, 20,20);//180, 180);
+        //var jumpRotate = cc.rotateTo(this.jumpDuration, 0,0);//180, 180);
+        //var jumpRotate = cc.rotateBy(this.jumpDuration*2, 360,360);//180, 180);
+
         var callback = cc.callFunc(function(){
             this.allowJump = true;
         }, this);
         var forbidJump = cc.callFunc(function(){
             this.allowJump = false;
         }, this);
-
-        return cc.spawn(jumpRotate,(cc.sequence(forbidJump,jumpUp, jumpDown, callback)));
+        //debugger
+        if(this.directionTo==1)
+        {
+            return cc.spawn((cc.sequence(jumpRotateUp,jumpRotateDown)),(cc.sequence(forbidJump,jumpUp, jumpDown, callback)));
+        }
+        return cc.spawn((cc.sequence(jumpRotateDown,jumpRotateUp)),(cc.sequence(forbidJump,jumpUp, jumpDown, callback)));
+        //return cc.spawn(jumpRotate,(cc.sequence(forbidJump,jumpUp, jumpDown, callback)));
     },
     // 设置移动动画
     setMoveAction: function(direction){
@@ -77,6 +93,10 @@ cc.Class({
             // 接触到point或者星星
             this.pointGain(other.node);
             cc.audioEngine.playEffect(this.starAudio, false);
+            if(other.node.name == "star")
+            {
+                this.node.dispatchEvent( new cc.Event.EventCustom('starGet', true) );
+            }
         }
     },
     //接触到point或者星星

@@ -52,8 +52,8 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1.24,
-    "_scaleY": 1.24,
+    "_scaleX": 1,
+    "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
       "x": -289,
@@ -127,6 +127,7 @@
     "originY": 0,
     "mediaWidth": 0,
     "mediadHeight": 0,
+    "directionTo": 1,
     "pointPrefab": {
       "__uuid__": "33d846ce-d739-4c8b-9965-3deaf715a5d0"
     },

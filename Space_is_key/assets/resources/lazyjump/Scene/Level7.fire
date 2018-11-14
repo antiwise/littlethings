@@ -3191,7 +3191,7 @@
     },
     "_enabled": true,
     "playerPrefab": {
-      "__uuid__": "6ff89b7d-1b49-46ee-8090-8cb46cd071f4"
+      "__uuid__": "b8130ce1-d8a6-47ca-85c6-1f873499ab94"
     },
     "bongPrefab": {
       "__uuid__": "17d272d9-bb21-442a-9b4a-334be783e34d"
@@ -3204,7 +3204,8 @@
     },
     "direction": 1,
     "level": 1,
-    "gameLevel": 1
+    "gameLevel": 1,
+    "_levelCur": null
   },
   {
     "__type__": "cc.Widget",

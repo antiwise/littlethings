@@ -28,15 +28,23 @@ cc.Class({
         level:1,
         //游戏现在所在的关卡数
         gameLevel:1,
+
+        //当前关卡数 menu，1,2,3,4,5 - 10
+        _levelCur: null,
+        //玩家速度
+        _playerMoveDuration: null,
+        //玩家当前level获得的star
+        _starGet:0,
     },
     onLoad: function () {
+        this._starGet = 0;
         // 打开碰撞系统
         var manager = cc.director.getCollisionManager();
         manager.enabled = true;
         
         // 得到当前的关卡数
-        var levelCur = cc.director.getScene().children[0].name;
-        this.gameLevel = parseInt(levelCur.replace("Level",""));
+        this._levelCur = cc.director.getScene().children[0].name;
+        this.gameLevel = parseInt(this._levelCur.replace("Level",""));
         
         var self = this;
         //取得背景容器
@@ -50,16 +58,21 @@ cc.Class({
         this.player.getComponent('Player').mediaWidth = this.node.width;
         this.player.getComponent('Player').mediaHeight = this.node.height;
         
-        // 第6关之后方块移动加速
-        if(this.gameLevel >= 6 ){
-            this.player.getComponent('Player').moveDuration = 2.5;
-        }
         
+       
+
         // 位于菜单场景中特定的快速移动
-        if(levelCur == "Menu"){
+        if(this._levelCur == "Menu"){
             this.gameLevel = 0;
-            this.player.getComponent('Player').moveDuration = 1;
+            this._playerMoveDuration = 2;
+        }else  if(this.gameLevel >= 6 ){// 第6关之后方块移动加速
+            this._playerMoveDuration = 3.5;
+        }else
+        {
+            this._playerMoveDuration = 4;
         }
+        this.player.getComponent('Player').moveDuration = this._playerMoveDuration;
+
         // 方块移动
         this.movePlayer(this.direction);
         
@@ -76,20 +89,11 @@ cc.Class({
             toMenuPrefab.setPosition(cc.p(420,290));
             toMenuPrefab.color = this.bg2.color;
         }else{
-            // 菜单场景中动画显示about按钮
-            var about = this.node.getChildByName("about");
-            setTimeout(function(){
-                about.runAction(cc.moveBy(0.3,cc.p(0,-71)).easing(cc.easeCubicActionOut()));
-            },1000);
-            // 菜单场景中动画显示exit按钮
-            var exit = this.node.getChildByName("exit");
-            setTimeout(function(){
-                exit.runAction(cc.moveBy(0.3,cc.p(0,71)).easing(cc.easeCubicActionOut()));
-            },2000);
+           
         }
         
         //设置小方块初始颜色
-        this.player.color = this.bg2.color;
+       // this.player.color = this.bg2.color;
         
         // 监听方块成功走完一层的事件
         this.node.on("moveEnd",function(){
@@ -107,6 +111,11 @@ cc.Class({
             var y = e.target.y;
             self.toBong(x, y);
             self.restart(self.level);
+        });
+        // 监听星星获得
+        this.node.on("starGet",function(e){
+            self._starGet = self._starGet + 1;
+            console.log(self._levelCur,self._starGet);
         });
         //监听屏幕触摸事件
         this.node.on(cc.Node.EventType.TOUCH_START,function(){
@@ -162,23 +171,25 @@ cc.Class({
         this.createPlayer(-(this.direction*this.node.width/2+this.player.width/2),this.node.height/2-level*this.node.height/3);
         this.player.getComponent('Player').mediaWidth = this.node.width;
         this.player.getComponent('Player').mediaHeight = this.node.height;
-        if(this.gameLevel >= 6){
-            this.player.getComponent('Player').moveDuration = 2.5;
-        }
-        if(this.gameLevel === 0){
-            this.player.getComponent('Player').moveDuration = 5;
-        }
+        this.player.getComponent('Player').moveDuration = this._playerMoveDuration;
+        
         this.movePlayer(this.direction);
         if(level == 1 || level == 3){
             //设置小方块颜色
-            this.player.color = this.bg2.color;
+            //this.player.color = this.bg2.color;
+            this.player.scaleX = 1;
+            this.player.getComponent('Player').directionTo = 1;
         }
         if(level == 2){
             //设置小方块颜色
-            this.player.color = this.bg3.color;
+            //this.player.color = this.bg3.color;
+            //设置小方块转向
+            this.player.scaleX = -1;
+            this.player.getComponent('Player').directionTo = -1;
         }
     },
     gameOver:function(){
+        cc.fy.JumpData.updateLevelData(this.gameLevel,this._starGet);
         // 进入下一关卡
         if(this.gameLevel !== 0){
             this.gameLevel++;
@@ -190,6 +201,7 @@ cc.Class({
         if(this.gameLevel == 10){
             cc.director.loadScene("Menu");
         }
+       
     },
 
 });

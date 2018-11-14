@@ -6,7 +6,7 @@ cc.Class({
     },
     onLoad: function () {
         // 旋转
-        var rotate = cc.rotateBy(1.5,90,0);
+        var rotate = cc.rotateBy(2,360,360);
         this.node.runAction(cc.repeatForever(rotate));
     },
 
