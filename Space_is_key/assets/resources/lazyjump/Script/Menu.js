@@ -74,14 +74,14 @@ cc.Class({
          setTimeout(function(){
             if(cc.isValid(newGame))
             {
-                newGame.runAction(cc.moveBy(0.3,cc.p(0,-128)).easing(cc.easeCubicActionOut()));
+        //        newGame.runAction(cc.moveBy(0.3,cc.p(0,-128)).easing(cc.easeCubicActionOut()));
             }
         },2000);
         var selectLevel = this.node.getChildByName("selectLevel");
          setTimeout(function(){
             if(cc.isValid(selectLevel))
             {
-                selectLevel.runAction(cc.moveBy(0.3,cc.p(0,-128)).easing(cc.easeCubicActionOut()));
+        //        selectLevel.runAction(cc.moveBy(0.3,cc.p(0,-128)).easing(cc.easeCubicActionOut()));
             }
         },2000);
     },

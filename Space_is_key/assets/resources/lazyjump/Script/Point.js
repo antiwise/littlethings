@@ -17,7 +17,7 @@ cc.Class({
     },
     onCollisionEnter:function(other,self){
         var _this = this;
-        if(other.node.name == "cube"){
+        if(other.node.name == "player"){
             var barrier = this.targetBarrier;
             var callback = cc.callFunc(function(){
                 if(_this.destroyThen){
