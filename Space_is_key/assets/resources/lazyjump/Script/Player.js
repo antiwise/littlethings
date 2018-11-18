@@ -24,7 +24,7 @@ cc.Class({
         }
     },
     onLoad: function () {
-        //this.jumpAction = this.setJumpAction();
+        //this.jumpAction = this.setJumpAction();//去掉，不在这赋值
         this.setInputControl();
     },
     jump:function(){

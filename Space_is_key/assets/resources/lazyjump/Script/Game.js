@@ -72,7 +72,6 @@ cc.Class({
             this._playerMoveDuration = 4;
         }
         this.player.getComponent('Player').moveDuration = this._playerMoveDuration;
-
         // 方块移动
         this.movePlayer(this.direction);
         

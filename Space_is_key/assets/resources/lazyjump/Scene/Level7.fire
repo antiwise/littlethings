@@ -1924,8 +1924,8 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 201,
-      "b": 0,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -1936,8 +1936,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20,
-      "height": 20
+      "width": 30,
+      "height": 30
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1964,7 +1964,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "a23235d1-15db-4b95-8439-a2e005bfff91"
+      "__uuid__": "9cbc5026-80ab-4f68-bc07-a86c05fbe2ef"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2068,9 +2068,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 53,
-      "g": 151,
-      "b": 0,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -2081,8 +2081,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20,
-      "height": 20
+      "width": 30,
+      "height": 30
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2109,7 +2109,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "a23235d1-15db-4b95-8439-a2e005bfff91"
+      "__uuid__": "9cbc5026-80ab-4f68-bc07-a86c05fbe2ef"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2213,9 +2213,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 53,
-      "g": 151,
-      "b": 0,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -2226,8 +2226,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20,
-      "height": 20
+      "width": 30,
+      "height": 30
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2254,7 +2254,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "a23235d1-15db-4b95-8439-a2e005bfff91"
+      "__uuid__": "9cbc5026-80ab-4f68-bc07-a86c05fbe2ef"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2358,9 +2358,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 53,
-      "g": 151,
-      "b": 0,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -2371,8 +2371,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20,
-      "height": 20
+      "width": 30,
+      "height": 30
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2399,7 +2399,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "a23235d1-15db-4b95-8439-a2e005bfff91"
+      "__uuid__": "9cbc5026-80ab-4f68-bc07-a86c05fbe2ef"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2503,9 +2503,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 53,
-      "g": 151,
-      "b": 0,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -2516,8 +2516,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20,
-      "height": 20
+      "width": 30,
+      "height": 30
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2544,7 +2544,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "a23235d1-15db-4b95-8439-a2e005bfff91"
+      "__uuid__": "9cbc5026-80ab-4f68-bc07-a86c05fbe2ef"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -3142,8 +3142,8 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 201,
-      "b": 0,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -3154,8 +3154,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20,
-      "height": 20
+      "width": 30,
+      "height": 30
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -3182,7 +3182,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "a23235d1-15db-4b95-8439-a2e005bfff91"
+      "__uuid__": "9cbc5026-80ab-4f68-bc07-a86c05fbe2ef"
     },
     "_type": 0,
     "_sizeMode": 0,

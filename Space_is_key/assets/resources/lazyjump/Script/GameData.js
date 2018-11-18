@@ -69,6 +69,22 @@ cc.Class({
         }
     },
 
+    playBGM(url){
+        var audioUrl = this.getUrl(url);
+        console.log(audioUrl);
+        this.playLoadAudo(audioUrl, true, this.bgmVolume, GameAudioConfig.AudoType.BackGround);
+    },
+
+    getUrl:function(url,gameType){
+        if(gameType == cc.GAMETYPE.GD){
+            return cc.url.raw("resources/modules/pokergame/sounds/" + url);
+        }
+        else if(gameType == cc.GAMETYPE.SSSPOKER){
+            return cc.url.raw("resources/modules/13zhang/sounds/" + url);
+        }
+        return cc.url.raw("resources/modules/sounds/" + url);
+    },
+
     start () {
 
     },

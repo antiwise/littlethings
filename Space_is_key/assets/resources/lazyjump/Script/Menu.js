@@ -2,7 +2,8 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        
+        menuBgmAudio: {default: null, url: cc.AudioClip}, //背景音乐
+        gameBgmAudio: {default: null, url: cc.AudioClip}, //过关背景音乐
     },
 
     onLoad: function () {
