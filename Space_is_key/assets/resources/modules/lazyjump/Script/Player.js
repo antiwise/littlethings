@@ -30,7 +30,10 @@ cc.Class({
     jump:function(){
         this.jumpAction = this.setJumpAction();
         if(this.allowJump){
-            cc.audioEngine.playEffect(this.jumpAudio, false);
+            if(cc.sys.localStorage.getItem("playSound") == 1)
+            {
+                cc.audioEngine.playEffect(this.jumpAudio, false);
+            }
             this.node.runAction(this.jumpAction);
         }
     },
@@ -92,7 +95,10 @@ cc.Class({
         }else{
             // 接触到point或者星星
             this.pointGain(other.node);
-            cc.audioEngine.playEffect(this.starAudio, false);
+            if(cc.sys.localStorage.getItem("playSound") == 1)
+            {
+                cc.audioEngine.playEffect(this.starAudio, false);
+            }
             if(other.node.name == "star")
             {
                 this.node.dispatchEvent( new cc.Event.EventCustom('starGet', true) );

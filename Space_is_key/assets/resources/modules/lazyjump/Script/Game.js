@@ -76,6 +76,7 @@ cc.Class({
         this.movePlayer(this.direction);
         
         if(this.gameLevel>0){
+            cc.fy.JumpData.playBGM("gameBgm");
             // 显示关卡进度
             var levelPrefab = cc.instantiate(this.levelPrefab);
             this.node.addChild(levelPrefab);

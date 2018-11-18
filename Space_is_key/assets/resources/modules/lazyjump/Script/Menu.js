@@ -2,8 +2,9 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        menuBgmAudio: {default: null, url: cc.AudioClip}, //背景音乐
-        gameBgmAudio: {default: null, url: cc.AudioClip}, //过关背景音乐
+        museSoundBtn:cc.Button,
+        openSoundBtn:cc.Button,
+        
     },
 
     onLoad: function () {
@@ -14,10 +15,10 @@ cc.Class({
         if(cc.fy==null)
         {
             cc.fy = {};
+            var Gamedata = require("Gamedata");
+            cc.fy.JumpData = new Gamedata();
+            cc.fy.JumpData.init();
         }
-        var Gamedata = require("Gamedata");
-        cc.fy.JumpData = new Gamedata();
-        cc.fy.JumpData.init();
 
         // 为菜单上的按钮绑定touch事件
         for(var i = 0; i < levelBtn.length; i++){
@@ -85,6 +86,12 @@ cc.Class({
         //        selectLevel.runAction(cc.moveBy(0.3,cc.p(0,-128)).easing(cc.easeCubicActionOut()));
             }
         },2000);
+
+        cc.fy.JumpData.playBGM("menuBgm");
+
+        this.museSoundBtn.node.active = !(cc.sys.localStorage.getItem("playSound") == 0);
+        this.openSoundBtn.node.active = !this.museSoundBtn.node.active;
+
     },
     // 加载第一关
     newGame:function(level){
@@ -97,6 +104,15 @@ cc.Class({
     //切换场景至about
     toAbout:function(){
         cc.director.loadScene("About");
+    },
+
+    museSound:function(){
+        this.museSoundBtn.node.active = cc.fy.JumpData.openSound(false);
+        this.openSoundBtn.node.active = !this.museSoundBtn.node.active;
+    },
+    openSound:function(){
+        this.museSoundBtn.node.active = cc.fy.JumpData.openSound(true);
+        this.openSoundBtn.node.active = !this.museSoundBtn.node.active;
     },
 
     onDestroy:function()

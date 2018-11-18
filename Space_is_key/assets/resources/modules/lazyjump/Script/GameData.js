@@ -35,7 +35,8 @@ cc.Class({
                     cc.sys.localStorage.setItem('progress', str);
                 }
             }
-        }
+        },
+        audioId:null,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -48,7 +49,18 @@ cc.Class({
         }
         var data = cc.sys.localStorage.getItem('progress');
         this._progressData = JSON.parse(data);
+
+        cc.game.on(cc.game.EVENT_HIDE, function () {
+            console.log("cc.audioEngine.pauseAll");
+            cc.audioEngine.pauseAll();
+        });
+        cc.game.on(cc.game.EVENT_SHOW, function () {
+            console.log("cc.audioEngine.resumeAll");
+            cc.audioEngine.resumeAll();
+        });
     },
+
+
 
     getLevelData:function(level)
     {
@@ -71,19 +83,43 @@ cc.Class({
 
     playBGM(url){
         var audioUrl = this.getUrl(url);
-        console.log(audioUrl);
-        this.playLoadAudo(audioUrl, true, this.bgmVolume, GameAudioConfig.AudoType.BackGround);
+        console.log(audioUrl + ".mp3");
+        if(this.audioId != null && this.audioId >= 0){
+            cc.audioEngine.stop(this.audioId);
+        }
+        if(url != null){
+            this.audioId = cc.audioEngine.play(audioUrl + ".mp3",true,1);
+        }
+        if(cc.sys.localStorage.getItem("playSound") == 0)
+        {
+            this.openSound(false);
+        }
+    },
+
+    openSound(value){
+        var state = cc.audioEngine.getState(this.audioId); //-1error,0initalzing,1playing,2paused
+        if(value==null)
+        {
+            return state==1;
+        }
+        if(!value)
+        {
+            cc.audioEngine.pauseAll();
+            cc.sys.localStorage.setItem("playSound", 0);
+            return false;
+        }
+        if(value)
+        {
+            cc.audioEngine.resumeAll();
+            cc.sys.localStorage.setItem("playSound", 1);
+            return true;
+        }
     },
 
     getUrl:function(url,gameType){
-        if(gameType == cc.GAMETYPE.GD){
-            return cc.url.raw("resources/modules/pokergame/sounds/" + url);
-        }
-        else if(gameType == cc.GAMETYPE.SSSPOKER){
-            return cc.url.raw("resources/modules/13zhang/sounds/" + url);
-        }
-        return cc.url.raw("resources/modules/sounds/" + url);
+        return cc.url.raw("resources/modules/lazyjump/audio/" + url);
     },
+
 
     start () {
 
