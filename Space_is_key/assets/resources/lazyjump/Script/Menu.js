@@ -1,3 +1,4 @@
+var Gamedata = require("GameData");
 cc.Class({
     extends: cc.Component,
 
@@ -14,7 +15,7 @@ cc.Class({
         {
             cc.fy = {};
         }
-        var Gamedata = require("Gamedata");
+        
         cc.fy.JumpData = new Gamedata();
         cc.fy.JumpData.init();
 
