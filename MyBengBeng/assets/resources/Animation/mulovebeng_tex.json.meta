@@ -1,0 +1,7 @@
+{
+  "ver": "1.0.0",
+  "uuid": "4815cd64-7c6f-4f6f-8802-3faf94377ccf",
+  "atlasJson": "{\"width\":256,\"height\":256,\"name\":\"mulovebeng\",\"imagePath\":\"mulovebeng_tex.png\",\"SubTexture\":[{\"width\":78,\"y\":1,\"height\":67,\"name\":\"girlaixin\",\"x\":167},{\"width\":78,\"y\":1,\"height\":67,\"name\":\"boypt\",\"x\":87},{\"width\":78,\"y\":70,\"height\":67,\"name\":\"boyai\",\"x\":87},{\"width\":78,\"y\":73,\"height\":67,\"name\":\"girlpt\",\"x\":1},{\"width\":84,\"y\":1,\"height\":70,\"name\":\"taoxin\",\"x\":1}]}",
+  "texture": "f4929c52-b43c-4472-83cd-2447e6fdaf09",
+  "subMetas": {}
+}

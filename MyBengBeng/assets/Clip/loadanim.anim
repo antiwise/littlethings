@@ -1,0 +1,98 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "loadanim",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "boy": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -367,
+                20
+              ],
+              "curve": "linear"
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                -293,
+                88
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                -215,
+                30
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": [
+                -140,
+                88
+              ]
+            },
+            {
+              "frame": 2,
+              "value": [
+                -37,
+                20
+              ]
+            }
+          ]
+        }
+      },
+      "girl": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                276,
+                10
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                203,
+                85
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                164,
+                25
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": [
+                106,
+                82
+              ]
+            },
+            {
+              "frame": 2,
+              "value": [
+                40,
+                17
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

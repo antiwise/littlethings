@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="251">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="60" y="680" width="60" height="60"/>
+  <object id="129" name="star" x="1540" y="200" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="98" y="77">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="7"/>
+    <property name="step2" type="int" value="6"/>
+    <property name="step3" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="210" name="floor" x="0" y="740" width="400" height="60"/>
+  <object id="238" name="floor" x="1120" y="260" width="480" height="60"/>
+  <object id="244" name="yuanst" x="320" y="540" width="60" height="60">
+   <ellipse/>
+  </object>
+  <object id="245" name="yuanst" x="460" y="400" width="60" height="60">
+   <ellipse/>
+  </object>
+  <object id="246" name="yuanst" x="640" y="260" width="60" height="60">
+   <ellipse/>
+  </object>
+  <object id="249" name="objdy" x="1260" y="260">
+   <polygon points="0,0 20,0 140,-240 -100,-240"/>
+  </object>
+  <object id="250" name="juqing" type="juqing" x="1500" y="360" width="100" height="80">
+   <properties>
+    <property name="tiaojian" value="{&quot;girldie&quot;:true}"/>
+    <property name="type" value="[{&quot;time&quot;:4,&quot;timescale&quot;:0.1,&quot;moshi&quot;:1,&quot;scale&quot;:0.5,&quot;mubiao&quot;:1,&quot;anim1&quot;:0,&quot;anim2&quot;:0}, {&quot;time&quot;:3,&quot;timescale&quot;:0.15,&quot;moshi&quot;:1,&quot;scale&quot;:1,&quot;mubiao&quot;:0,&quot;anim1&quot;:0,&quot;anim2&quot;:0}]"/>
+    <property name="yinyue" value="butgirl"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

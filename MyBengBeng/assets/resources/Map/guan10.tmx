@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="194">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="320" y="680" width="60" height="60"/>
+  <object id="129" name="star" x="1180" y="680" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="220" y="220">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="10"/>
+    <property name="step2" type="int" value="5"/>
+    <property name="step3" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="186" name="floor" x="0" y="740" width="1600" height="60"/>
+  <object id="187" name="floor" x="1040" y="640" width="40" height="100"/>
+  <object id="188" name="floor" x="1340" y="640" width="40" height="100"/>
+  <object id="189" name="floordy" x="1360" y="600" width="20" height="565.792" rotation="90"/>
+  <object id="190" name="floordy" x="1600" y="580" width="20" height="525.028" rotation="90"/>
+  <object id="191" name="floordy" x="1360" y="620" width="20" height="609.701" rotation="90"/>
+  <object id="193" name="floordy" x="1600" y="560" width="20" height="525.028" rotation="90"/>
+ </objectgroup>
+</map>

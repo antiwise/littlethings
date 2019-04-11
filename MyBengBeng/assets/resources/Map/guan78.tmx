@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="236">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="80" y="640" width="60" height="60"/>
+  <object id="129" name="star" x="1320" y="200" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="420" y="40">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="help" type="bool" value="false"/>
+    <property name="step1" type="int" value="9"/>
+    <property name="step2" type="int" value="5"/>
+    <property name="step3" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="230" name="objst" x="0" y="800">
+   <polygon points="0,0 0,-100 660,-100 760,-200 960,-200 980,-120 1600,-120 1600,0"/>
+  </object>
+  <object id="232" name="chuan" x="1260" y="260" width="180" height="20"/>
+  <object id="233" name="juqing" type="juqing" x="1300" y="180" width="100" height="80">
+   <properties>
+    <property name="tiaojian" value="{&quot;time&quot;:0.6}"/>
+    <property name="type" value="[{&quot;time&quot;:3,&quot;timescale&quot;:0.1,&quot;moshi&quot;:1,&quot;scale&quot;:2,&quot;mubiao&quot;:1,&quot;anim1&quot;:0,&quot;anim2&quot;:0}, {&quot;time&quot;:2.4,&quot;timescale&quot;:0.15,&quot;moshi&quot;:1,&quot;scale&quot;:1.2,&quot;mubiao&quot;:0,&quot;anim1&quot;:1,&quot;anim2&quot;:1}]"/>
+    <property name="yinyue" value="manmanxihuanni"/>
+   </properties>
+  </object>
+  <object id="235" name="yuandy" x="760" y="400" width="200" height="200">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

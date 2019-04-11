@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="100" height="60" tilewidth="20" tileheight="20" infinite="0" nextobjectid="158">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="180" y="1100" width="60" height="60"/>
+  <object id="129" name="star" x="1880" y="520" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="220" y="620">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="8"/>
+    <property name="step2" type="int" value="5"/>
+    <property name="step3" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="145" name="floor" type="1" x="600" y="1160" width="120" height="20">
+   <properties>
+    <property name="x1" type="int" value="0"/>
+    <property name="y1" type="int" value="430"/>
+   </properties>
+  </object>
+  <object id="146" name="floor" x="40" y="1160" width="340" height="20"/>
+  <object id="147" name="jian" x="720" y="520" width="20" height="660"/>
+  <object id="148" name="floor" x="1860" y="580" width="120" height="20"/>
+  <object id="155" name="juqing" type="juqing" x="1760" y="600" width="100" height="80">
+   <properties>
+    <property name="tiaojian" value="{&quot;time&quot;:0.5}"/>
+    <property name="type" value="[{&quot;time&quot;:2,&quot;timescale&quot;:0.1,&quot;moshi&quot;:1,&quot;scale&quot;:2,&quot;mubiao&quot;:0,&quot;anim1&quot;:0,&quot;anim2&quot;:0}, {&quot;time&quot;:2.4,&quot;timescale&quot;:0.15,&quot;moshi&quot;:0,&quot;scale&quot;:2,&quot;mubiao&quot;:0,&quot;anim1&quot;:1,&quot;anim2&quot;:1},{&quot;time&quot;:0.4,&quot;timescale&quot;:0.15,&quot;moshi&quot;:0,&quot;scale&quot;:2,&quot;mubiao&quot;:0,&quot;anim1&quot;:2,&quot;anim2&quot;:1}]"/>
+    <property name="yinyue" value="querenguo"/>
+   </properties>
+  </object>
+  <object id="156" name="floor" type="1" x="740" y="1160" width="120" height="20">
+   <properties>
+    <property name="x1" type="int" value="0"/>
+    <property name="y1" type="int" value="430"/>
+   </properties>
+  </object>
+  <object id="157" name="tanlizhangai" x="1160" y="1160" width="380" height="40"/>
+ </objectgroup>
+</map>

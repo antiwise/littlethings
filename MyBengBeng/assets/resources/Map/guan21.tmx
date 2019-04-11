@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="223">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="140" y="640" width="60" height="60"/>
+  <object id="129" name="star" x="1360" y="640" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="220" y="220">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="5"/>
+    <property name="step2" type="int" value="5"/>
+    <property name="step3" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="209" name="floor" x="0" y="700" width="1600" height="60"/>
+  <object id="212" name="objst" x="720" y="700">
+   <polygon points="0,0 20,-60 40,0"/>
+  </object>
+  <object id="213" name="floordy" x="985" y="682" width="20" height="679.058" rotation="-254.278"/>
+  <object id="214" name="objdy" x="1010" y="684">
+   <polygon points="0,0 -240,-60 -320,-140 -320,-240 -160,-380 60,-400 140,-200 40,-40"/>
+  </object>
+  <object id="215" name="chuan" x="20" y="500" width="280" height="20"/>
+  <object id="216" name="chuan" x="20" y="280" width="280" height="20"/>
+  <object id="217" name="chuan" x="20" y="20" width="280" height="20"/>
+  <object id="218" name="yuandy" x="140" y="-280" width="300" height="300">
+   <ellipse/>
+  </object>
+  <object id="221" name="juqing" type="juqing" x="220" y="-180" width="120" height="180">
+   <properties>
+    <property name="tiaojian" value="{&quot;time&quot;:0.25}"/>
+    <property name="type" value="[{&quot;time&quot;:0.1,&quot;timescale&quot;:1,&quot;moshi&quot;:0,&quot;scale&quot;:1,&quot;mubiao&quot;:0,&quot;anim1&quot;:0,&quot;anim2&quot;:0}, {&quot;time&quot;:5,&quot;timescale&quot;:0.08,&quot;moshi&quot;:1,&quot;scale&quot;:0.3,&quot;mubiao&quot;:1,&quot;anim1&quot;:0,&quot;anim2&quot;:0},{&quot;time&quot;:5,&quot;timescale&quot;:0.08,&quot;moshi&quot;:1,&quot;scale&quot;:0.5,&quot;mubiao&quot;:0,&quot;anim1&quot;:0,&quot;anim2&quot;:0}]"/>
+    <property name="yinyue" value="meidejiu"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

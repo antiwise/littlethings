@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="291">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="740" y="720" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="580" y="420" width="40" height="40">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="8"/>
+    <property name="step2" type="int" value="5"/>
+    <property name="step3" type="int" value="6"/>
+   </properties>
+  </object>
+  <object id="210" name="floor" x="0" y="780" width="1260" height="20"/>
+  <object id="252" name="star" x="1180" y="301" width="60" height="60"/>
+  <object id="283" name="objst" x="1240" y="361">
+   <polygon points="0,0 -60,0 -940,-180 -940,20 0,20"/>
+  </object>
+  <object id="284" name="chuan" x="0" y="180" width="300" height="20"/>
+  <object id="285" name="yuandy" x="180" y="40" width="140" height="140">
+   <ellipse/>
+  </object>
+  <object id="286" name="juqing" type="juqing" x="540" y="400" width="100" height="80">
+   <properties>
+    <property name="tiaojian" value="{&quot;girldie&quot;:true}"/>
+    <property name="type" value="[{&quot;time&quot;:1.5,&quot;timescale&quot;:0.1,&quot;moshi&quot;:1,&quot;scale&quot;:0.5,&quot;mubiao&quot;:1,&quot;anim1&quot;:0,&quot;anim2&quot;:0}, {&quot;time&quot;:3,&quot;timescale&quot;:0.15,&quot;moshi&quot;:1,&quot;scale&quot;:1,&quot;mubiao&quot;:0,&quot;anim1&quot;:0,&quot;anim2&quot;:0}, {&quot;time&quot;:3,&quot;timescale&quot;:0.15,&quot;moshi&quot;:1,&quot;scale&quot;:2,&quot;mubiao&quot;:0,&quot;anim1&quot;:0,&quot;anim2&quot;:0}]"/>
+    <property name="yinyue" value="butgirl"/>
+   </properties>
+  </object>
+  <object id="288" name="chuan" x="0" y="580" width="200" height="20"/>
+  <object id="289" name="chuan" x="0" y="440" width="200" height="20"/>
+  <object id="290" name="jian" x="0" y="160" width="200" height="20"/>
+ </objectgroup>
+</map>

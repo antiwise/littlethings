@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "f4929c52-b43c-4472-83cd-2447e6fdaf09",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "mulovebeng_tex": {
+      "ver": "1.0.3",
+      "uuid": "371c63e4-30a9-41a3-ba8d-60f6f0bc1f49",
+      "rawTextureUuid": "f4929c52-b43c-4472-83cd-2447e6fdaf09",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -5,
+      "offsetY": 57.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 244,
+      "height": 139,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

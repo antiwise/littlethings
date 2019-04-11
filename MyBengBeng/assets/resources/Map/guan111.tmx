@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="277">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="60" y="680" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="40" y="80" width="40" height="40">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="4"/>
+    <property name="step2" type="int" value="2"/>
+    <property name="step3" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="210" name="floor" x="0" y="740" width="1600" height="60"/>
+  <object id="252" name="star" x="1540" y="680" width="60" height="60"/>
+  <object id="268" name="objst" x="300" y="740">
+   <polygon points="0,0 80,-200 140,0"/>
+  </object>
+  <object id="269" name="objst" x="700" y="740">
+   <polygon points="0,0 80,-340 160,0"/>
+  </object>
+  <object id="270" name="objst" x="1120" y="740">
+   <polygon points="0,0 60,-480 120,0"/>
+  </object>
+  <object id="271" name="jian" x="440" y="720" width="260" height="20"/>
+  <object id="272" name="jian" x="860" y="720" width="260" height="20"/>
+  <object id="274" name="jian" x="1240" y="720" width="280" height="20"/>
+  <object id="276" name="juqing" type="juqing" x="1520" y="660" width="80" height="80">
+   <properties>
+    <property name="tiaojian" value="{&quot;time&quot;:1.1}"/>
+    <property name="type" value="[{&quot;time&quot;:4,&quot;timescale&quot;:0.1,&quot;moshi&quot;:1,&quot;scale&quot;:0.5,&quot;mubiao&quot;:1,&quot;anim1&quot;:1,&quot;anim2&quot;:0}, {&quot;time&quot;:3,&quot;timescale&quot;:0.15,&quot;moshi&quot;:1,&quot;scale&quot;:1,&quot;mubiao&quot;:0,&quot;anim1&quot;:1,&quot;anim2&quot;:1}]"/>
+    <property name="yinyue" value="pingfan"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

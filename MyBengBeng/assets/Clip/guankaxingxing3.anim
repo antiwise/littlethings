@@ -1,0 +1,97 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "guankaxingxing3",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "star2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -45,
+                437
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                -31,
+                123
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -5,
+                34
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -900
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1800
+            }
+          ]
+        }
+      },
+      "star3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                138,
+                389
+              ]
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": [
+                118,
+                207
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                97,
+                16
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": -900
+            },
+            {
+              "frame": 0.5,
+              "value": -1800
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

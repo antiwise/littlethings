@@ -1,0 +1,56 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "guankaxingxing2",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "star2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -29,
+                275
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                -31,
+                123
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -5,
+                34
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -900
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1800
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

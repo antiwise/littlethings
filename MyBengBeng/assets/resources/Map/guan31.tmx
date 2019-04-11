@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="208">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="140" y="540" width="60" height="60"/>
+  <object id="129" name="star" x="1540" y="540" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="420" y="40">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="12"/>
+    <property name="step2" type="int" value="8"/>
+    <property name="step3" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="200" name="floor" x="0" y="600" width="1600" height="200"/>
+  <object id="201" name="floordy" x="360" y="220" width="20" height="380"/>
+  <object id="202" name="floordy" x="620" y="220" width="20" height="380"/>
+  <object id="203" name="floordy" x="880" y="220" width="20" height="380"/>
+  <object id="204" name="floordy" x="1120" y="220" width="20" height="380"/>
+  <object id="207" name="juqing" type="juqing" x="240" y="20" width="100" height="80">
+   <properties>
+    <property name="tiaojian" value="{&quot;girldie&quot;:true}"/>
+    <property name="type" value="[{&quot;time&quot;:3,&quot;timescale&quot;:0.1,&quot;moshi&quot;:1,&quot;scale&quot;:0.5,&quot;mubiao&quot;:1,&quot;anim1&quot;:0,&quot;anim2&quot;:0}, {&quot;time&quot;:3,&quot;timescale&quot;:0.1,&quot;moshi&quot;:1,&quot;scale&quot;:2,&quot;mubiao&quot;:1,&quot;anim1&quot;:0,&quot;anim2&quot;:0},{&quot;time&quot;:4,&quot;timescale&quot;:0.15,&quot;moshi&quot;:1,&quot;scale&quot;:1,&quot;mubiao&quot;:0,&quot;anim1&quot;:0,&quot;anim2&quot;:0}]"/>
+    <property name="yinyue" value="butgirl"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

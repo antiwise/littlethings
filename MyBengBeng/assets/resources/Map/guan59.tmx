@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="253">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="60" y="680" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="100" y="20">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="6"/>
+    <property name="step2" type="int" value="5"/>
+    <property name="step3" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="210" name="floor" x="0" y="740" width="680" height="60"/>
+  <object id="243" name="floor" x="1240" y="740" width="360" height="60"/>
+  <object id="246" name="star" x="1400" y="680" width="60" height="60"/>
+  <object id="252" name="objdy" x="142" y="449">
+   <polygon points="0,0 52,63 149,167 248,218 336,263 436,261 528,254 591,240 731,150 823,67 864,19 869,20 794,106 711,178 561,264 340,276 168,193 60,82"/>
+  </object>
+ </objectgroup>
+</map>

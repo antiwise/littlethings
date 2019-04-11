@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="100" height="80" tilewidth="20" tileheight="20" infinite="0" nextobjectid="223">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="160" y="1440" width="60" height="60"/>
+  <object id="129" name="star" x="1880" y="1020" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="140" y="1140">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="8"/>
+    <property name="step2" type="int" value="8"/>
+    <property name="step3" type="int" value="8"/>
+   </properties>
+  </object>
+  <object id="200" name="floor" x="0" y="1500" width="660" height="100"/>
+  <object id="209" name="tanlizhangai" x="1180" y="1060" width="80" height="320"/>
+  <object id="210" name="floor" x="1680" y="1080" width="300" height="100"/>
+  <object id="213" name="floor" x="760" y="1320" width="260" height="20"/>
+  <object id="214" name="floor" x="660" y="1120" width="360" height="20"/>
+  <object id="215" name="jian" x="520" y="640" width="260" height="20" rotation="-90"/>
+  <object id="216" name="jian" x="560" y="380" width="260" height="20" rotation="90"/>
+  <object id="217" name="tanlizhangai" x="280" y="1480" width="380" height="20"/>
+  <object id="219" name="floor" x="340" y="640" width="960" height="20"/>
+  <object id="220" name="chuan" x="0" y="880" width="280" height="20"/>
+  <object id="221" name="juqing" type="juqing" x="80" y="1040" width="100" height="80">
+   <properties>
+    <property name="tiaojian" value="{&quot;getcaidan&quot;:true}"/>
+    <property name="type" value="[{&quot;time&quot;:1.5,&quot;timescale&quot;:1,&quot;moshi&quot;:0,&quot;scale&quot;:1,&quot;mubiao&quot;:0,&quot;anim1&quot;:3,&quot;anim2&quot;:0}]"/>
+    <property name="yinyue" value="qilongzhu"/>
+   </properties>
+  </object>
+  <object id="222" name="caidan" x="760" y="560" width="60" height="80"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="315">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="40" y="680" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="40" y="400">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="help" type="bool" value="false"/>
+    <property name="step1" type="int" value="8"/>
+    <property name="step2" type="int" value="6"/>
+    <property name="step3" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="274" name="floor" x="0" y="740" width="1600" height="60"/>
+  <object id="285" name="star" x="740" y="680" width="60" height="60"/>
+  <object id="294" name="floor" x="260" y="700" width="240" height="20"/>
+  <object id="295" name="floor" x="320" y="660" width="240" height="20"/>
+  <object id="296" name="floor" x="380" y="620" width="240" height="20"/>
+  <object id="297" name="floor" x="440" y="580" width="240" height="20"/>
+  <object id="298" name="floor" x="500" y="540" width="240" height="20"/>
+  <object id="299" name="floor" x="560" y="500" width="240" height="20"/>
+  <object id="300" name="floor" x="620" y="460" width="240" height="20"/>
+  <object id="305" name="floor" x="1360" y="700" width="240" height="20"/>
+  <object id="306" name="floor" x="1300" y="660" width="240" height="20"/>
+  <object id="307" name="floor" x="1240" y="620" width="240" height="20"/>
+  <object id="308" name="floor" x="1180" y="580" width="240" height="20"/>
+  <object id="309" name="floor" x="1120" y="540" width="240" height="20"/>
+  <object id="310" name="floor" x="1060" y="500" width="240" height="20"/>
+  <object id="311" name="floor" x="1000" y="460" width="240" height="20"/>
+  <object id="312" name="jian" x="840" y="720" width="220" height="20"/>
+  <object id="313" name="objdy" x="240" y="620">
+   <polygon points="0,0 -120,0 -120,120 0,120 0,100 -100,100 -100,20 -20,20 -20,40 0,40"/>
+  </object>
+ </objectgroup>
+</map>

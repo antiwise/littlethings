@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.3" orientation="orthogonal" renderorder="right-down" width="50" height="40" tilewidth="20" tileheight="20" infinite="0" nextobjectid="219">
+ <objectgroup name="duixiang">
+  <object id="128" name="hero" x="32" y="717" width="60" height="60"/>
+  <object id="129" name="star" x="671" y="711" width="60" height="60"/>
+  <object id="135" name="map" type="2" x="193" y="185">
+   <properties>
+    <property name="caidan" type="bool" value="false"/>
+    <property name="step1" type="int" value="5"/>
+    <property name="step2" type="int" value="5"/>
+    <property name="step3" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="209" name="floor" x="0" y="780" width="860" height="20"/>
+  <object id="211" name="juqing" type="juqing" x="520" y="73" width="100" height="80">
+   <properties>
+    <property name="tiaojian" value="{&quot;girldie&quot;:true}"/>
+    <property name="type" value="[{&quot;time&quot;:4,&quot;timescale&quot;:0.1,&quot;moshi&quot;:1,&quot;scale&quot;:0.5,&quot;mubiao&quot;:1,&quot;anim1&quot;:0,&quot;anim2&quot;:0}, {&quot;time&quot;:3,&quot;timescale&quot;:0.15,&quot;moshi&quot;:1,&quot;scale&quot;:1,&quot;mubiao&quot;:0,&quot;anim1&quot;:0,&quot;anim2&quot;:0}]"/>
+    <property name="yinyue" value="butgirl"/>
+   </properties>
+  </object>
+  <object id="213" name="objdy" x="507" y="469">
+   <polygon points="0,0 86,-107 310,-109 376,0 343,1 299,-86 302,120 92,121 91,-77 31,2"/>
+  </object>
+  <object id="214" name="floordy" x="611" y="590" width="56" height="188"/>
+  <object id="216" name="floordy" x="737" y="591" width="56" height="188"/>
+  <object id="217" name="yuandy" x="608" y="173" width="188" height="188">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

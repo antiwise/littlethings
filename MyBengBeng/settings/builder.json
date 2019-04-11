@@ -1,0 +1,41 @@
+{
+  "appKey": "BBB76E53-DC65-DFCF-2FA7-E547C227876F",
+  "appSecret": "41254075f7d43f07ba60b7fffe34731d",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": false,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": true,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "com.xinggege.jumpinglover",
+  "privateKey": "9AF4B8EDC8BFCCAC4D1C6EC7AE11286A",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "startScene": "60df5639-8276-4431-8885-40f3409ac108",
+  "title": "JumpingLover",
+  "webOrientation": "landscape",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "https://myres-1256148877.cos.ap-chengdu.myqcloud.com/myres1.0",
+    "appid": "wxa72eeff654d940bb",
+    "isSubdomain": false,
+    "orientation": "landscape",
+    "subContext": "mywx"
+  },
+  "xxteaKey": "kuangfenglulang",
+  "zipCompressJs": true
+}
